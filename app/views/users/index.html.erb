@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users:</h1>
+
+<br>
+<%= link_to "Back to Home", root_path %>
+<p>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>City</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user["name"] %></td>
+        <td><%= user["username"] %></td>
+        <td><%= user["address"]["city"] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<p><b>Created by:</b> Jose Pino | <b>Github: </b><a href=" https://github.com/pollocoder">pollocoder</a></p>
+<p><b>Special Thanks to: </b><a href="http://www.mattmorgante.com/">Matt Morgante</a> & <a href="https://jsonplaceholder.typicode.com/">JSONPlaceholder</a></p>
