@@ -39,7 +39,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'httparty', '~> 0.16.3'
+  gem 'httparty', '~> 0.21.0'
   gem 'rename', '~> 1.0', '>= 1.0.6'
 end
 
